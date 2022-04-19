@@ -1,6 +1,6 @@
-# variable "region" {
-#   description = "Enter AWS region"
-# }
+variable "region" {
+  description = "Enter AWS region"
+}
 
 variable "bucket_name" {
   description = "(Required) The name of the bucket. If omitted, Terraform will assign a random, unique name."
@@ -16,12 +16,6 @@ variable "bucket_prefix" {
 
 variable "force_destroy" {
   description = "(Optional, Default:false ) A boolean that indicates all objects should be deleted from the bucket so that the bucket can be destroyed without error. These objects are not recoverable."
-  type        = bool
-  default     = false
-}
-
-variable "object_lock_enabled" {
-  description = "( Optional, Default:false )Whether S3 bucket should have an Object Lock configuration enabled."
   type        = bool
   default     = false
 }
