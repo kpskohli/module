@@ -1,6 +1,6 @@
-variable "region" {
-  description = "Enter AWS region"
-}
+# variable "region" {
+#   description = "Enter AWS region"
+# }
 
 variable "bucket_name" {
   description = "(Required) The name of the bucket. If omitted, Terraform will assign a random, unique name."
